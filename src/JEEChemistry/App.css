@@ -1,0 +1,226 @@
+/* App.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.app {
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+    height: 101vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, .6)), url(https://images.unsplash.com/photo-1566125882500-87e10f726cdc?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.title {
+    background: #164863;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.title h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #F3EEEA;
+}
+
+.title p {
+    color: white;
+    margin-top: -15px;
+}
+
+.quiz {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: -5px;
+}
+
+.answers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #DA0C81;
+}
+
+.answers-btn {
+    padding: 15px;
+    background-color: #DA0C81;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background: linear-gradient(to right, #DA0C81 50%, #B2C8BA 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+}
+
+.answers-btn:hover {
+    background-position: left bottom;
+    color: white;
+}
+
+.navigation {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.quiz-container {
+    flex: 1;
+    /* Set quiz content to take two-thirds of the width */
+    padding: 5px;
+    text-align: center;
+    position: relative;
+}
+
+.question-status {
+    display: flex;
+    flex-wrap: wrap; /* Wrap items to the next line */
+    justify-content: center; /* Center items horizontally */
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 800px; /* Adjust the maximum width as per your layout */
+  }
+  
+  /* Individual question status circle */
+  .question-status-item {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #555;
+    border-radius: 50%;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+  }
+
+.status-indicator {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 0px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.answered {
+    background-color: green;
+    color: #fff;
+}
+
+.not-answered {
+    background-color: red;
+    color: #fff;
+}
+
+.not-visited {
+    background-color: grey;
+    color: #fff;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.timer {
+    margin-bottom: 20px;
+}
+
+.timer h2,
+p {
+    color: white;
+}
+
+.info p {
+    color: white;
+}
+
+#color {
+    color: black;
+}
+
+.color2,
+.color3 {
+    color: white;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+.question-info {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1rem;
+}
+
+.score-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    width: 60%;
+    transform: translateX(28%);
+    color: black;
+}
+
+.score-section p {
+    color: black;
+}
+
+.navigation button {
+    margin: 0 5px;
+    padding: 10px 20px;
+    background-color: #FF9209;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.navigation button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* New styles for the progress bar */
+.progress-bar {
+    width: 50%;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 26%;
+}
+
+.progress {
+    height: 100%;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #3498db;
+}

@@ -1,0 +1,165 @@
+/* ExcitingCrashCoursesCarousel.css */
+
+.exciting-crash-courses-carousel {
+  margin-top: 20px;
+  overflow: hidden;
+  padding: 2rem 9%;
+}
+
+.carousel-slide {
+  position: relative;
+}
+.fancy-sentence {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #000; /* Set the color for the fancy sentence */
+}
+.image-overlay {
+  position: relative;
+  height: 500px; /* Adjust the height as needed */
+  background-color: #f5f5f5; /* Background color for the slides */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.image-overlay img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the entire slide */
+  border-bottom: 1px solid #ccc;
+   /* Add a border at the bottom for separation */
+}
+.carousel-slide[data-id='1'] .image-overlay {
+  background:url('https://shorturl.at/iwyY6');
+  background-size: cover;
+  background-position-y: calc(80%);
+  background-position-x: calc(100%); /* Replace with the actual image for id 1 */
+}
+.carousel-slide[data-id='1'] .text-container{
+  left: 20%;
+}
+.carousel-slide[data-id='2'] .image-overlay {
+  background-image: url('https://shorturl.at/fnGI0');
+  background-size: cover;
+  background-position-y: calc(5%);
+}
+.carousel-slide[data-id='2'] .text-container{
+  left: 70%;
+}
+.carousel-slide[data-id='3'] .text-container{
+  left: 30%;
+}
+.carousel-slide[data-id='3'] .image-overlay {
+  background-image: url('https://shorturl.at/iyKLR'); /* Replace with the actual image for id 3 */
+  background-size: cover;
+}
+.text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #000; /* Text color */
+}
+.text-container p{
+  color: black;
+}
+.buy-now-button {
+  background-color: #28a745; /* Button background color */
+  color: #fff; /* Button text color */
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1.5rem;
+}
+.buy-now-button:hover{
+  background-color: #DA0C81;
+}
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.carousel-buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrow-button {
+  width: 30px;
+  height: 30px;
+  background-color: #007bff; /* Button background color */
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff; /* Arrow color */
+}
+
+.arrow-button {
+  opacity: 0; /* Reduce opacity for disabled buttons */
+}
+@media screen and (max-width: 768px) {
+  .text-container {
+    left: 50%;
+  }
+  .carousel-slide[data-id='1'],.carousel-slide[data-id='2'],.carousel-slide[data-id='3'] .image-overlay{
+    background-position: center;
+  }
+  .carousel-slide[data-id='1'] .image-overlay{
+    background-position-x: calc(50%);
+  }
+  .carousel-slide[data-id='1'] .text-container {
+    left: 50%;
+    top: 20%;
+  }
+
+  .carousel-slide[data-id='2'] .text-container {
+    left: 50%;
+    top: 60%;
+    color: white;
+  }
+  .carousel-slide[data-id='2'] .text-container p{
+    color: white;
+  }
+  .carousel-slide[data-id='3'] .text-container {
+    left: 35%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .text-container {
+    left: 50%;
+    font-size: 0.8rem; /* Adjust text size for smaller screens */
+  }
+  .carousel-slide[data-id='3'] .text-container {
+    left: 30%;
+  }
+  .carousel-slide[data-id='3'] .text-container p{
+    left: 40%;
+  }
+  .carousel-slide[data-id='1'] .text-container {
+    left: 50%;
+    top: 20%;
+  }
+  .carousel-slide[data-id='2'] .text-container {
+    left: 50%;
+    top: 80%;
+    color: white;
+  }
+  .carousel-slide[data-id='2'] .image-overlay{
+    background-position-x: calc(20%);
+  }
+  .buy-now-button {
+    font-size: 0.8rem;
+    margin-top: 0; /* Adjust button size for smaller screens */
+  }
+
+  .h3 {
+    font-size: 1rem; /* Adjust heading size for smaller screens */
+  }
+}

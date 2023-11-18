@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+$green: #5D9C59;
+$black: #18122B;
+$white: #fff;
+$light-color: #666;
+$light: #9CA777;
+$light-bg: #EEEEEE;
+$border: .1rem solid rgba(0, 0, 0, .1);
+$box-shadow:0 .5rem 1rem solid rgba(0, 0, 0, .1);
+
+@mixin grid($val) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+    gap: 1.5rem;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+.App1 {
+    .box {
+        @include grid(15rem);
+        padding-top: 5rem;
+        button{
+            text-align: center;
+        }
+    }
+}
