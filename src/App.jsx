@@ -74,7 +74,6 @@ const App = () => {
           ))}
         </Routes>
         <div className="box">
-        <marquee >Flat 15% off on all crash courses</marquee>
           <h2>Select an Exquisite Test Component</h2>
           <ul>
             {components.map((component, index) => (

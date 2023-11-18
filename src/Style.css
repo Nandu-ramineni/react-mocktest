@@ -5,64 +5,12 @@
   text-decoration: none;
 }
 
-section {
-  padding: 2rem 9%;
-}
-
-.App1 .box {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  gap: 1.5rem;
-  height: 40vh;
-  padding: 2rem;
-}
-.App1 .box .btn {
-  text-align: center;
-  font-size: 1.5rem;
-  color: #fff;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(school\ icons.png);
-  background-position: center;
-  background-size: cover;
-  display: inline-block;
-  align-items: center;
-  justify-content: center;
-}
-.App1 .box .btn:hover {
-  filter: drop-shadow(5px 5px 10px #00b4d8);
-}
-
-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 1rem;
-  background-color: #5D9C59;
-  color: #fff;
-  overflow: hidden;
-  height: 15vh;
-}
-nav a {
-  text-decoration: none;
-  color: #fff;
-  margin-right: 1rem;
-}
-nav a img {
-  height: 200px;
-  margin-right: 0.5rem;
-}
-nav div {
-  display: flex;
-}
-nav div a {
-  margin-right: 1rem;
-}
-
 h1 {
   text-align: center;
 }
 
 .box {
-  padding-top: 5.5rem;
+  padding-top: 6.5rem;
 }
 .box marquee {
   padding-top: 0.5rem;
@@ -78,44 +26,44 @@ h1 {
 .box ul {
   list-style-type: none;
   display: flex;
-  flex-wrap: wrap; /* Enable wrapping */
+  flex-wrap: wrap;
   gap: 2rem;
-  padding: 2rem 9%; /* Adjust the gap between boxes as needed */
+  padding: 2rem 9%;
 }
 .box li {
   height: 30vh;
   flex: 1;
-  background-color: #eaeaea; /* Adjust the background color as needed */
-  border: 1px solid #ccc; /* Adjust the border as needed */
-  border-radius: 8px; /* Adjust the border radius as needed */
+  background-color: #eaeaea;
+  border: 1px solid #ccc;
+  border-radius: 8px;
   display: flex;
-  flex-direction: column; /* Ensure image and text are stacked vertically */
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 1.2rem; /* Adjust the font size as needed */
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  font-size: 1.2rem;
+  box-sizing: border-box;
 }
 .box a {
   text-decoration: none;
-  color: #333; /* Adjust the text color as needed */
+  color: #333;
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: column; /* Ensure image and text are stacked vertically */
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 .box img {
   max-width: 70%;
-  height: auto; /* Ensure the image does not exceed the container width */
-  border-radius: 8px 8px 0 0; /* Rounded corners only at the top */
+  height: auto;
+  border-radius: 8px 8px 0 0;
 }
 .box a:hover {
-  background-color: #ddd; /* Adjust the hover background color as needed */
+  background-color: #ddd;
 }
 @media (max-width: 600px) {
   .box li {
-    flex: 100%; /* Full width for small screens */
+    flex: 100%;
   }
   .box img {
     max-width: 50%;
@@ -125,27 +73,26 @@ h1 {
 
 .mocktest-duniya-description {
   padding: 2rem 9%;
-  background-color: #f5f5f5; /* Adjust the background color as needed */
+  background-color: #f5f5f5;
   border-radius: 8px;
   margin-top: 20px;
   background: linear-gradient(45deg, #4CAF50, #2196F3);
-  background-size: cover; /* Ensure the background image covers the container */
-  background-position: center; /* Center the background image */
-  background-repeat: no-repeat; /* Do not repeat the background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   position: relative;
-  /* Add opacity to the background */
-  opacity: 0.9; /* Adjust the opacity as needed */
+  opacity: 0.9;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .mocktest-duniya-description h2 {
-  font-size: 2rem; /* Adjust the font size as needed */
+  font-size: 2rem;
   margin-bottom: 10px;
   text-align: center;
 }
 .mocktest-duniya-description p {
-  font-size: 1.1rem; /* Adjust the font size as needed */
+  font-size: 1.1rem;
   color: white;
 }
 
