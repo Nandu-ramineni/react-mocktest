@@ -25,7 +25,7 @@ export const Navbar = () => {
 
       <ul className={click ? "nav-menu active" : "nav-menu"}>
         <li>
-          <Link to="/app" onClick={handleClick}>Home</Link>
+          <Link to="/" onClick={handleClick}>Home</Link>
         </li>
 
         <li>
