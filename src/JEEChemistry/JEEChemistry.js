@@ -5,8 +5,6 @@ import React, { useState, useEffect } from 'react';
 import Quiz from './Quiz';
 import { BrowserRouter as Link } from 'react-router-dom';
 import quizData from './chemistryData';// Your quiz data containing questions and answers
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMarker } from '@fortawesome/free-solid-svg-icons';
 function JeeChemistry() {
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [score, setScore] = useState(0);
@@ -72,7 +70,7 @@ function JeeChemistry() {
 
     return (
         <div className="app">
-            <div className='title'><h1><FontAwesomeIcon icon={faMarker} /> Mock Test Duniya</h1>
+            <div className='title'><h1> Mock Test Duniya</h1>
                 <p>Exclusive for JEE Mains/Advance,TS & Ap Eamcet,Gate Mock Tests</p>
             </div>
             <div className="quiz-container">
