@@ -7,7 +7,6 @@ import { BrowserRouter as Link } from 'react-router-dom';
 import physicsData from './physicsData'; // Your quiz data containing questions and answers
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMarker } from '@fortawesome/free-solid-svg-icons';
-import { faHandPointRight } from '@fortawesome/free-solid-svg-icons';
 function JeePhysics() {
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [score, setScore] = useState(0);
@@ -90,7 +89,7 @@ function JeePhysics() {
                                     </div>
                                 </div>
                                 <p>Thank you! 😊</p>
-                                <p>For more Free Mock Tests <FontAwesomeIcon icon={faHandPointRight} /> <Link to="/physics">Physics</Link></p>
+                                <p>For more Free Mock Tests 👉 <Link to="/App">Click here</Link></p>
                             </div>
                         ) : (
                             <div>
