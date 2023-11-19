@@ -1,9 +1,8 @@
-
-
 import './App.css';
 import React, { useState, useEffect } from 'react';
 import Quiz from './Quiz';
-import { BrowserRouter as Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+
 import quizData from './chemistryData';// Your quiz data containing questions and answers
 function JeeChemistry() {
     const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -13,20 +12,23 @@ function JeeChemistry() {
     const [answered, setAnswered] = useState(Array(quizData.length).fill(false));
 
     const handleAnswerClick = (isCorrect) => {
-        const updatedAnswered = answered.slice();
-        updatedAnswered[currentQuestion] = true;
-        setAnswered(updatedAnswered);
-        if (isCorrect) {
-            setScore(score + 1);
-        }
+    const updatedAnswered = answered.slice();
+    updatedAnswered[currentQuestion] = true;
+    setAnswered(updatedAnswered);
 
-        const nextQuestion = currentQuestion + 1;
-        if (nextQuestion < quizData.length) {
-            setCurrentQuestion(nextQuestion);
-        } else {
-            setShowScore(true);
-        }
-    };
+    if (isCorrect) {
+        setScore(score + 1);
+    }
+
+    const nextQuestion = currentQuestion + 1;
+
+    if (nextQuestion < quizData.length) {
+        setCurrentQuestion(nextQuestion);
+    } else {
+        setShowScore(true);
+    }
+};
+
 
     const handlePreviousClick = () => {
         if (currentQuestion > 0) {
@@ -70,8 +72,8 @@ function JeeChemistry() {
 
     return (
         <div className="app">
-            <div className='title'><h1> Mock Test Duniya</h1>
-                <p>Exclusive for JEE Mains/Advance,TS & Ap Eamcet,Gate Mock Tests</p>
+            <div className='title'><h1>JEE Chemistry Mock Test</h1>
+                <p>MockTest Duniya Exclusive for JEE Mains/Advance,TS & Ap Eamcet,Gate Mock Tests</p>
             </div>
             <div className="quiz-container">
                 {showScore ? (

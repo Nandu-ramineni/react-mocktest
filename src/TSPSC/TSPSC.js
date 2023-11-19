@@ -68,8 +68,8 @@ function Tspsc() {
 
     return (
         <div className="app">
-            <div className='title'><h1> Mock Test Duniya</h1>
-                <p>Exclusive for JEE Mains/Advance,TS & Ap Eamcet,Gate Mock Tests</p>
+            <div className='title'><h1>TSPSC Mock Test</h1>
+                <p>Mock Test Duniya Exclusive for JEE Mains/Advance,TS & Ap Eamcet,Gate Mock Tests</p>
             </div>
             <div className="quiz-container">
                 {showScore ? (

@@ -13,7 +13,6 @@ import ContactForm from "./ContactForm";
 import "./Style.css";
 const App = () => {
   const [activeComponent, setActiveComponent] = useState(null);
-
   const components = [
     {
       name: "JEEPhysics",
