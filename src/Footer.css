@@ -119,4 +119,7 @@
   .footer {
     padding: 1rem calc((100vw - 1440px) / 2);
   }
+  .footer-form button{
+    margin-top: .5rem;
+  }
 }/*# sourceMappingURL=Footer.css.map */
