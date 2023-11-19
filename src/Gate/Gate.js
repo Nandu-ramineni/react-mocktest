@@ -3,7 +3,7 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
 import Quiz from './Quiz';
-import { BrowserRouter as Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import quizData from './GateData';// Your quiz data containing questions and answers
 function Gate() {
     const [currentQuestion, setCurrentQuestion] = useState(0);
