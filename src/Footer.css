@@ -72,9 +72,14 @@
   color: #cccccc;
   cursor: pointer;
 }
+.footer-links ul li:hover{
+  padding-right: .5rem;
+  text-decoration: underline;
+}
 .footer-form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 .footer-form label {
   font-size: 1.5rem;
@@ -87,6 +92,12 @@
   border: none;
   border-radius: 0.5rem;
   padding: 0.75rem 1.5rem;
+}
+.footer-form button{
+  padding: .5rem;
+  width: 40%;
+  margin-top: .5rem;
+  margin: auto;
 }
 @media (min-width: 648px) {
   .footer {

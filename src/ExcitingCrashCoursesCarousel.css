@@ -31,7 +31,7 @@
    /* Add a border at the bottom for separation */
 }
 .carousel-slide[data-id='1'] .image-overlay {
-  background:url('https://shorturl.at/iwyY6');
+  background:url('https://img.freepik.com/free-photo/women-teach-men-how-work-with-laptops-work_1150-26810.jpg');
   background-size: cover;
   background-position-y: calc(80%);
   background-position-x: calc(100%); /* Replace with the actual image for id 1 */
@@ -40,7 +40,7 @@
   left: 20%;
 }
 .carousel-slide[data-id='2'] .image-overlay {
-  background-image: url('https://shorturl.at/fnGI0');
+  background-image: url('https://img.freepik.com/free-photo/sideways-shot-glad-amazed-student-happy-see-groupmate-into-distance-has-toothy-smile-carries-notebook-pencil_273609-19144.jpg');
   background-size: cover;
   background-position-y: calc(5%);
 }
@@ -51,7 +51,7 @@
   left: 30%;
 }
 .carousel-slide[data-id='3'] .image-overlay {
-  background-image: url('https://shorturl.at/iyKLR'); /* Replace with the actual image for id 3 */
+  background-image: url('https://img.freepik.com/free-photo/young-man-holding-notebook-pen-biting-pen-while-looking-camera-white-t-shirt-jeans-looking-happy-front-view_176474-89245.jpg'); /* Replace with the actual image for id 3 */
   background-size: cover;
 }
 .text-container {
@@ -140,7 +140,7 @@ h3 {
     left: 30%;
   }
   .carousel-slide[data-id='3'] .text-container p{
-    left: 40%;
+    left: 50%;
   }
   .carousel-slide[data-id='1'] .text-container {
     left: 50%;
@@ -148,7 +148,7 @@ h3 {
   }
   .carousel-slide[data-id='2'] .text-container {
     left: 50%;
-    top: 80%;
+    top: 60%;
     color: white;
   }
   .carousel-slide[data-id='2'] .image-overlay{

@@ -1,5 +1,5 @@
 import React from "react";
-import { FaInstagram,FaXTwitter,FaYoutube, FaFacebook } from "react-icons/fa6";
+import { FaInstagram,FaYoutube, FaFacebook, FaLinkedin } from "react-icons/fa6";
 import './Footer.css'
 const Footer = () => {
     const links = [
@@ -24,12 +24,12 @@ const Footer = () => {
         <div className='footer'>
             <div className="footer-company-info">
                 <div className="footer-img">
-                    <img src={"https://firebasestorage.googleapis.com/v0/b/nandu-1121a.appspot.com/o/TEST1.png?alt=media&token=aa8ee1b1-921a-4a8b-a15f-c45b288c0ae3"} alt="" />
+                    <h1>MockTest Duniya</h1>
                 </div>
                 
                 <div className='infos'>             
                     <span>
-                        Copyright © 2020 MockTest Duniya ltd.
+                        Copyright © 2023 MockTest Duniya ltd.
                     </span>
                     <span>
                         All rights reserved
@@ -39,10 +39,10 @@ const Footer = () => {
                     </span>
                 </div>
                 <div className="footer-icons">
-                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><FaInstagram/></a>
-                    <FaFacebook/>
-                    <FaXTwitter/>
-                    <FaYoutube/>
+                <a href="https://instagram.com/nanduvarma__?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" rel="noopener noreferrer"><FaInstagram/></a>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><FaFacebook/></a>
+                    <a href="https://www.linkedin.com/in/ramineni-nandu-varma-85a226251" target="_blank" rel="noopener noreferrer"><FaLinkedin/></a>
+                    <a href="https://youtube.com/@Nandu_Varma?feature=shared" target="_blank" rel="noopener noreferrer"><FaYoutube/></a>
                 </div>
             </div>
             <div className="footer-links">
@@ -61,6 +61,7 @@ const Footer = () => {
                     Stay up to date
                 </label>
                 <input type="email" name="" id="" placeholder="Enter Your Email" />
+                <button type="submit">Subscribe</button>
             </div>
         </div>
         

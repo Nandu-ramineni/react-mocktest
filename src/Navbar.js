@@ -29,7 +29,7 @@ export const Navbar = () => {
         </li>
 
         <li>
-          <Link to='https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox' target="_blank" onClick={handleClick} >Material</Link>
+          <Link to='https://drive.google.com/file/d/1GO5VpqXd8pA6BpM590Y4d_0pakonKNC8/view?usp=drivesdk' target="_blank" onClick={handleClick} >Material</Link>
         </li>
 
         <li>
