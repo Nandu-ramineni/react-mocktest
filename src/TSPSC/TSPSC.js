@@ -1,7 +1,7 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
 import Quiz from './Quiz';
-import { BrowserRouter as Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import quizData from './TSPSCData';
 function Tspsc() {
     const [currentQuestion, setCurrentQuestion] = useState(0);
