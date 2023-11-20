@@ -61,7 +61,7 @@ const Footer = () => {
                     Stay up to date
                 </label>
                 <input type="email" name="" id="" placeholder="Enter Your Email" />
-                <button type="submit">Subscribe</button>
+                
             </div>
         </div>
         
