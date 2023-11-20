@@ -42,6 +42,10 @@ const ContactForm = () => {
             <input type="email" id="email" name="email" placeholder='Enter Your email' required />
           </div>
           <div className="form-group">
+            <label htmlFor="tel">Contact No:</label> <br />
+            <input type='tel' name='tel' id='tel' placeholder='Enter Your Contact No' required></input>
+          </div>
+          <div className="form-group">
             <label htmlFor="message">Message:</label> <br />
             <textarea id="message" name="message" rows="4"placeholder='Enter Your Message' required></textarea>
           </div>
