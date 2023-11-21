@@ -10,6 +10,7 @@ import { Navbar } from "./Navbar";
 import ExcitingCrashCoursesCarousel from "./Coursel";
 import AboutUs from "./AboutUs";
 import ContactForm from "./ContactForm";
+import { FaWhatsapp } from "react-icons/fa6";
 import "./Style.css";
 const App = () => {
   const [activeComponent, setActiveComponent] = useState(null);
@@ -137,6 +138,15 @@ const App = () => {
             empower you to achieve your academic goals. Start your preparation
             with us and experience the Mocktest Duniya advantage today.
           </p>
+        </div>
+        <div className="whatsapp-button">
+          <a
+            href="https://wa.me/9063730699"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaWhatsapp />
+          </a>
         </div>
         <AboutUs />
         <ContactForm />
